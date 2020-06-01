@@ -3,7 +3,7 @@ model mechanics_sample
     Placement(visible = true, transformation(origin = {-70, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Mechanics.Translational.Components.Fixed fixed annotation(
     Placement(visible = true, transformation(origin = {-140, -30}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  Modelica.Mechanics.Translational.Components.Spring spring(c = 1)  annotation(
+  Modelica.Mechanics.Translational.Components.Spring spring(c = 2)  annotation(
     Placement(visible = true, transformation(origin = {-110, -10}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Mechanics.Translational.Components.Damper damper(d = 1)  annotation(
     Placement(visible = true, transformation(origin = {-110, 10}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
@@ -13,7 +13,7 @@ model mechanics_sample
     Placement(visible = true, transformation(origin = {-130, 50}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Mechanics.Translational.Sensors.PositionSensor positionSensor annotation(
     Placement(visible = true, transformation(origin = {-30, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
-  Modelica.Blocks.Continuous.TransferFunction transferFunction(a = {1, 1, 1}, b = {1})  annotation(
+  Modelica.Blocks.Continuous.TransferFunction transferFunction(a = {1, 1, 2}, b = {1})  annotation(
     Placement(visible = true, transformation(origin = {70, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Blocks.Sources.Step step1 annotation(
     Placement(visible = true, transformation(origin = {30, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
