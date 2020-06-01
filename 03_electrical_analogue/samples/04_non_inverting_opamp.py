@@ -17,6 +17,8 @@ s, t = sympy.symbols(['s', 't'])
 
 # Equation
 
+# v_out = K * (v_pos - v_neg)
+
 expr = sympy.Eq(K * (v_in - R1 / (R1 + R2) * v_out), v_out)
 
 print("expr=\n{}".format(sympy.pretty(expr)))
